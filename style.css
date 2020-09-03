@@ -134,6 +134,13 @@ li {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .hero {
+    height: 50vh;
+    background-position: bottom;
+  }
+}
+
 .hero--card {
   background: #ffffff;
   padding: 24px;
@@ -157,12 +164,18 @@ li {
 /* Details Section Styles */
 
 .details {
-  padding-top: 210px;
+  padding-top: 220px;
 }
 
 @media (min-width: 550px) {
   .details {
-    padding-top: 170px;
+    padding-top: 180px;
+  }
+}
+
+@media (min-width: 768px) {
+  .details {
+    padding-top: 120px;
   }
 }
 
@@ -208,7 +221,8 @@ input:focus {
   outline: 1px auto var(--ocean);
 }
 
-button, .button {
+button,
+.button {
   padding: 14px 24px;
   background: var(--ocean);
   border-radius: 999px;
@@ -226,16 +240,19 @@ button, .button {
   width: fit-content;
 }
 
-button:hover, .button:hover {
+button:hover,
+.button:hover {
   background: var(--ocean-dark);
   transition: 0.35s;
 }
 
-button.success, .button.success {
+button.success,
+.button.success {
   background: #41a248;
 }
 
-button.success:hover, .button.success:hover {
+button.success:hover,
+.button.success:hover {
   background: #3a9440;
 }
 
